@@ -1,0 +1,639 @@
+<!-- Head -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/images/icon-dark.png">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Latte House</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="promotion__nav container-fluid navbar-nav">
+            <p>Chương trình mua một tặng một. <a href="#">Tìm hiểu ngay!</a></p>
+        </nav>
+        <!-- Navigation header -->
+        <div class="nav-bar nav-scroll">
+            <div class="nav__bar container">
+                <div class="logo">
+                    <img src="/assets/images/logo-w-dark.png" alt="">
+                </div>
+                <div class="search__gr">
+                    <form action="">
+                        <div>
+                            <div>
+                                <!-- Change select tag to div with modal & js code -->
+                                <select id="active__item">
+                                    <option value="tea">Danh mục</option>
+                                    <option value="tea">Trà</option>
+                                    <option value="coffee">Cà phê</option>
+                                    <option value="juice">Nước ép</option>
+                                    <option value="milktea">Trà sữa</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                        </div>
+                        <button class="btn-search" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="orther__option">
+                    <div class="contact">
+                        <div><i class="fa-solid fa-phone-volume"></i></div>
+                        <div><span>Liên hệ hỗ trợ</span><span>+84 1900 9099</span></div>
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="heart">
+                        <i class="fa-solid fa-heart"></i>
+                        <div>
+                            <span class="bi-quanty">1</span>
+                        </div>
+                        <!-- <i class="bi bi-0-circle-fill"></i> -->
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div>
+                            <span class="bi-quanty">1</span>
+                        </div>
+                        <!-- <i class="bi bi-0-circle-fill"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu__nav  justify-content-center">
+            <nav class="nav__bar container">
+                <ul class="menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a>
+                        <ul>
+                            <li><a href="#">Trà</a>
+                                <ul>
+                                    <li><a href="#">Trà trái cây</a></li>
+                                    <li><a href="#">Trà sữa</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cà phê</a>
+                                <ul>
+                                    <li><a href="#">Cà phê việt</a></li>
+                                    <li><a href="#">Cà phê pha máy</a></li>
+                                    <li><a href="#">Cold Brew</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sinh tố</a></li>
+                            <li><a href="#">Nước ép</a></li>
+                            <li><a href="#">Thức uống đá xay</a></li>
+                            <li><a href="#">Đồ ăn nhẹ</a>
+                                <ul>
+                                    <li><a href="#">Bánh mặn</a></li>
+                                    <li><a href="#">Bánh ngọt</a></li>
+                                    <li><a href="#">Snack</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Về chúng tôi</a>
+                        <ul>
+                            <li><a href="#">Công ty</a>
+                                <ul>
+                                    <li><a href="#">Tầm nhìn</a></li>
+                                    <li><a href="#">Sứ mệnh</a></li>
+                                    <li><a href="#">Giá trị cốt lõi</a></li>
+                                    <li><a href="#">Lĩnh vực hoạt động</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Tuyển dụng</a>
+                                <ul>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Nhà máy</a></li>
+                                    <li><a href="#">Cửa hàng</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Liên hệ</a>
+                                <ul>
+                                    <li><a href="#">Địa chỉ công ty</a></li>
+                                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                                    <li><a href="#">Góp ý & Khiếu nại</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+    </header>
+    <!--Main section -->
+    <section class="heading__page">
+        <div class="container">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <div class="hero__page">
+    </div>
+    <section class="main__page">
+        <div class="container">
+            <aside >
+                <div class="search__form">
+                    <label class="title__label" for="">Tìm kiếm<div></div></label>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm..."
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn bi bi-search" type="button" id="button-addon2"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="categories__filter">
+                    <label class="title__label" for="">Danh mục sản phẩm<div></div></label>
+                    <ul>
+                        <li><a href="#">Trà sữa</a><span>89</span></li>
+                        <li><a href="#">Trà trái cây</a><span>59</span></li>
+                        <li><a href="#">Cà phê</a><span>49</span></li>
+                        <li><a href="#">Sinh tố</a><span>29</span></li>
+                        <li><a href="#">Nước ép</a><span>19</span></li>
+                        <li><a href="#">Đá xay</a><span>49</span></li>
+                        <li><a href="#">Đồ ăn nhẹ</a><span>39</span></li>
+                    </ul>
+
+                </div>
+                <div class="price__filter">
+                    <label class="title__label" for="customRange1" class="form-label">Lọc theo giá<div></div></label>
+                    <input type="range" class="form-range" id="customRange1">
+                    <div>
+                        <span>0</span><span>-</span><span>80,000đ</span>
+                    </div>
+                </div>
+                <div class="tags__filter">
+                    <label class="title__label" for="">Tags<div></div></label>
+                    <p>
+                        <a href="#" class="btn" role="button" data-bs-toggle="button">Trà sữa lài</a>
+                        <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Trà
+                            đào</a>
+                        <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Trà
+                            vải</a>
+                        <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Cà phê
+                            đá xay</a>
+                        <a href="#" class="btn active" role="button" data-bs-toggle="button"
+                            aria-pressed="true">Chocolate đá xay</a>
+                        <a href="#" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Trà
+                            nhãn</a>
+                    </p>
+                </div>
+                <div class="top__seling">
+                    <label class="title__label" for="">Top bán chạy<div></div></label>
+                    <div class="item__pr">
+                        <div class="img__pr">
+                            <img src="/assets/images/cafe.png" alt="">
+                            <div class="btn__gr">
+                                <div class="cart__btn">
+                                    <button class="bi-cart-fill"></button>
+                                    <span>Thêm vào giỏ</span>
+                                </div>
+                                <div class="info__btn">
+                                    <a href="#"><button class="bi-info-circle-fill"></button></a>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                                <div class="eye__btn">
+                                    <button class="bi-eye-fill"></button>
+                                    <span>Xem nhanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__pr">
+                            <div class="detail__pr">
+                                <h3 class="name__pr"><a href="#">Trà hoa hồng</a></h3>
+                                <div class="price__pr">
+                                    <p class="price"><span>25.000</span><span>đ</span></p>
+                                    <div class="discount__price">
+                                        <p class="compare__price"><span>35.000</span><span>đ</span></p>
+                                        <span>-10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn__wishlist">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__pr">
+                        <div class="img__pr">
+                            <img src="/assets/images/cafe.png" alt="">
+                            <div class="btn__gr">
+                                <div class="cart__btn">
+                                    <button class="bi-cart-fill"></button>
+                                    <span>Thêm vào giỏ</span>
+                                </div>
+                                <div class="info__btn">
+                                    <a href="#"><button class="bi-info-circle-fill"></button></a>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                                <div class="eye__btn">
+                                    <button class="bi-eye-fill"></button>
+                                    <span>Xem nhanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__pr">
+                            <div class="detail__pr">
+                                <h3 class="name__pr"><a href="#">Trà hoa hồng</a></h3>
+                                <div class="price__pr">
+                                    <p class="price"><span>25.000</span><span>đ</span></p>
+                                    <div class="discount__price">
+                                        <p class="compare__price"><span>35.000</span><span>đ</span></p>
+                                        <span>-10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn__wishlist">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__pr">
+                        <div class="img__pr">
+                            <img src="/assets/images/cafe.png" alt="">
+                            <div class="btn__gr">
+                                <div class="cart__btn">
+                                    <button class="bi-cart-fill"></button>
+                                    <span>Thêm vào giỏ</span>
+                                </div>
+                                <div class="info__btn">
+                                    <a href="#"><button class="bi-info-circle-fill"></button></a>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                                <div class="eye__btn">
+                                    <button class="bi-eye-fill"></button>
+                                    <span>Xem nhanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__pr">
+                            <div class="detail__pr">
+                                <h3 class="name__pr"><a href="#">Trà hoa hồng</a></h3>
+                                <div class="price__pr">
+                                    <p class="price"><span>25.000</span><span>đ</span></p>
+                                    <div class="discount__price">
+                                        <p class="compare__price"><span>35.000</span><span>đ</span></p>
+                                        <span>-10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn__wishlist">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__pr">
+                        <div class="img__pr">
+                            <img src="/assets/images/cafe.png" alt="">
+                            <div class="btn__gr">
+                                <div class="cart__btn">
+                                    <button class="bi-cart-fill"></button>
+                                    <span>Thêm vào giỏ</span>
+                                </div>
+                                <div class="info__btn">
+                                    <a href="#"><button class="bi-info-circle-fill"></button></a>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                                <div class="eye__btn">
+                                    <button class="bi-eye-fill"></button>
+                                    <span>Xem nhanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__pr">
+                            <div class="detail__pr">
+                                <h3 class="name__pr"><a href="#">Trà hoa hồng</a></h3>
+                                <div class="price__pr">
+                                    <p class="price"><span>25.000</span><span>đ</span></p>
+                                    <div class="discount__price">
+                                        <p class="compare__price"><span>35.000</span><span>đ</span></p>
+                                        <span>-10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn__wishlist">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <article class="products__part">
+                <div class="sortby__nav">
+                    <div class="result__search">
+                        Hiển thị 20 kết quả tương thích
+                    </div>
+                    <div class="sortby__gr">
+                        <div>
+                            <label for="">Sắp xếp:</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Mới nhất</option>
+                                <option value="1">Giá: Tăng dần</option>
+                                <option value="2">Giá: Giảm dần</option>
+                                <option value="3">Tên: A-Z</option>
+                                <option value="4">Tên: Z-A</option>
+                                <option value="5">Cũ nhất</option>
+                                <option value="6">Mới nhất</option>
+                                <option value="7">Bán chạy</option>
+                                <option value="8">Đang giảm giá</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="item__pr">
+                        <div class="img__pr">
+                            <img src="/assets/images/cafe.png" alt="">
+                            <div class="btn__gr">
+                                <div class="cart__btn">
+                                    <button class="bi-cart-fill"></button>
+                                    <span>Thêm vào giỏ</span>
+                                </div>
+                                <div class="info__btn">
+                                    <a href="#"><button class="bi-info-circle-fill"></button></a>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                                <div class="eye__btn">
+                                    <button class="bi-eye-fill"></button>
+                                    <span>Xem nhanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__pr">
+                            <div class="detail__pr">
+                                <h3 class="name__pr"><a href="#">Trà hoa hồng</a></h3>
+                                <div class="price__pr">
+                                    <p class="price"><span>25.000</span><span>đ</span></p>
+                                    <div class="discount__price">
+                                        <p class="compare__price"><span>35.000</span><span>đ</span></p>
+                                        <span>-10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn__wishlist">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__pr">
+                        <div class="img__pr">
+                            <img src="/assets/images/cafe.png" alt="">
+                            <div class="btn__gr">
+                                <div class="cart__btn">
+                                    <button class="bi-cart-fill"></button>
+                                    <span>Thêm vào giỏ</span>
+                                </div>
+                                <div class="info__btn">
+                                    <a href="#"><button class="bi-info-circle-fill"></button></a>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                                <div class="eye__btn">
+                                    <button class="bi-eye-fill"></button>
+                                    <span>Xem nhanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__pr">
+                            <div class="detail__pr">
+                                <h3 class="name__pr"><a href="#">Trà hoa hồng</a></h3>
+                                <div class="price__pr">
+                                    <p class="price"><span>25.000</span><span>đ</span></p>
+                                    <div class="discount__price">
+                                        <p class="compare__price"><span>35.000</span><span>đ</span></p>
+                                        <span>-10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn__wishlist">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__pr">
+                        <div class="img__pr">
+                            <img src="/assets/images/cafe.png" alt="">
+                            <div class="btn__gr">
+                                <div class="cart__btn">
+                                    <button class="bi-cart-fill"></button>
+                                    <span>Thêm vào giỏ</span>
+                                </div>
+                                <div class="info__btn">
+                                    <a href="#"><button class="bi-info-circle-fill"></button></a>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                                <div class="eye__btn">
+                                    <button class="bi-eye-fill"></button>
+                                    <span>Xem nhanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__pr">
+                            <div class="detail__pr">
+                                <h3 class="name__pr"><a href="#">Trà hoa hồng</a></h3>
+                                <div class="price__pr">
+                                    <p class="price"><span>25.000</span><span>đ</span></p>
+                                    <div class="discount__price">
+                                        <p class="compare__price"><span>35.000</span><span>đ</span></p>
+                                        <span>-10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn__wishlist">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__pr">
+                        <div class="img__pr">
+                            <img src="/assets/images/cafe.png" alt="">
+                            <div class="btn__gr">
+                                <div class="cart__btn">
+                                    <button class="bi-cart-fill"></button>
+                                    <span>Thêm vào giỏ</span>
+                                </div>
+                                <div class="info__btn">
+                                    <a href="#"><button class="bi-info-circle-fill"></button></a>
+                                    <span>Xem chi tiết</span>
+                                </div>
+                                <div class="eye__btn">
+                                    <button class="bi-eye-fill"></button>
+                                    <span>Xem nhanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__pr">
+                            <div class="detail__pr">
+                                <h3 class="name__pr"><a href="#">Trà hoa hồng</a></h3>
+                                <div class="price__pr">
+                                    <p class="price"><span>25.000</span><span>đ</span></p>
+                                    <div class="discount__price">
+                                        <p class="compare__price"><span>35.000</span><span>đ</span></p>
+                                        <span>-10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn__wishlist">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-heart-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="d-flex justify-content-center pagination__nav" >
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="first__footer">
+        <div class="container">
+            <div class="col__ft">
+                <img src="/assets/images/logo-w-light.png" alt="">
+                <div>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p>Tòa nhà QTSC9 (toà T), đường Tô Ký, phường Tân Chánh Hiệp, quận 12, TP HCM.</p>
+                </div>
+                <div>
+                    <i class="bi bi-telephone-fill"></i>
+                    <p>(024) 7300 1955</p>
+                </div>
+                <div>
+                    <i class="bi bi-envelope-at-fill"></i>
+                    <p>caodang@fpt.edu.vn</p>
+                </div>
+                <div>
+                    <i class="bi bi-clock-history"></i>
+                    <p>Làm việc cả tuần từ 7:00 - 22:00</p>
+                </div>
+            </div>
+            <div class="col__ft">
+                <h6>Dịch vụ khách hàng</h6>
+                <ul>
+                    <li>
+                        <a href="">An toàn mua sắm</a>
+                    </li>
+                    <li>
+                        <a href="">Thông tin thanh toán</a>
+                    </li>
+                    <li>
+                        <a href="">Dịch vụ giao hàng</a>
+                    </li>
+                    <li>
+                        <a href="">Thanh toán online</a>
+                    </li>
+                    <li>
+                        <a href="">Dịch vụ trả hàng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col__ft">
+                <h6>Về chúng tôi</h6>
+                <ul>
+                    <li>
+                        <a href="">Thông tin tuyển dụng</a>
+                    </li>
+                    <li>
+                        <a href="">Địa chỉ công ty</a>
+                    </li>
+                    <li>
+                        <a href="">Danh sách chi nhánh</a>
+                    </li>
+                    <li>
+                        <a href="">Góp ý khiếu nại</a>
+                    </li>
+                    <li>
+                        <a href="">Liên hệ chúng tôi</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col__ft">
+                <h6>Đăng ký thành viên</h6>
+                <div><span>Đăng ký ngay để không bỏ lỡ bất kỳ khuyến mãi nào từ Latte House</span></div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="@gmail.com"
+                        aria-describedby="button-addon2">
+                    <button class="btn bi bi-send-fill btn-success" type="button" id="button-addon2"></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="second__footer">
+        <div class="container">
+            <div class="coppyright__ft">
+                <span>Coppy right © 2023 <a href="#">Latte House</a> All Rights Reserved</span>
+            </div>
+            <div class="payment__card">
+                <img src="/assets/images/footer_trustbadge.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/41b7b9f4b1.js" crossorigin="anonymous"></script>
+<script src="/assets/js/main.js"></script>
+
+</html>
